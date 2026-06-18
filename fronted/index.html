@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="image/pokebola.jpeg">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img id="logo" src="../../image/pokebola.jpeg" alt="logito">
+        <h1 id="principal_title"> POKEMON </h1>
+    </header>
+
+    <section id="search">
+        <div class="search-form">
+            <input id="box_search" type="text" placeholder="Buscar..." class="buscar-input">
+            <button onclick="search()" id="succes_search"></button>
+        </div>
+        <ul id="results"></ul>
+    </section>
+    <section>
+        <div class="pokemons">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="pagination">
+            <button id="loadMore">Load More</button>
+        </div>
+    </footer>
+
+    <script src="../script/peticion.js"> </script>
+</body>
+</html>

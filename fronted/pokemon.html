@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        p {
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="pokemon-info">
+        <h1 class="pokemon-name"></h1>
+        <img class="pokemon-image">
+        <p class="pokemon-types"></p>
+        <p class="pokemon-generation"></p>
+        <div class="pokemon-move"></div>
+    </div>
+
+    <script>
+        const URL = "https://pokeapi.co/api/v2/pokemon";
+
+        (async function get_pokemon() {
+            const pokemonNameParam = window.location.search.split('=')[1]
+            console.log(pokemonNameParam)
+            try {
+                const response = await fetch(`${URL}/${pokemonNameParam}`);
+                const responseJson = await response.json();
+                const data = responseJson;
+
+                const pokemonName = document.querySelector(".pokemon-name");
+                pokemonName.innerHTML = data.name; // Escribir en el elemento HTML
+                console.log(data)
+
+                const pokemonImage = document.querySelector(".pokemon-image");
+                pokemonImage.setAttribute("src", data.sprites.other["official-artwork"].front_default)
+
+                const pokemonTypes = document.querySelector(".pokemon-types");
+                pokemonTypes.innerHTML = data.types.map(t => `<span> Tipo: ${t.type.name}</span>`)
+
+                const pokemonMoves = document.querySelector(".pokemon-move");
+                pokemonMoves.innerHTML = data.moves.map(t => `<div>${t.move.name}</div>`)
+
+                const pokemonGeneration = document.querySelector(".pokemon-generation");
+                pokemonGeneration.innerHTML = data.past_stats.map(t => `<p>Generation: ${t.generation.name}`)
+                
+                
+            }catch(e) {
+                console.log(e)
+            }
+        })();
+    </script>
+</body>
+</html>
