@@ -22,10 +22,11 @@ html {
 
 h1, h2, h3 {
     margin: 0;
+    align-items: ;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 /**
@@ -33,7 +34,7 @@ body {
  */
 
 main {
-  display: block;
+    display: block;
 }
 
 /**
@@ -42,8 +43,8 @@ main {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -78,7 +79,7 @@ pre {
  */
 
 a {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 /**
@@ -98,7 +99,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 /**
@@ -118,7 +119,7 @@ samp {
  */
 
 small {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 /**
@@ -128,18 +129,18 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+    top: -0.5em;
 }
 
 /* Embedded content
@@ -147,10 +148,9 @@ sup {
 
 /**
  * Remove the border on images inside links in IE 10.
- */
 
 img {
-  border-style: none;
+    border-style: none;
 }
 
 /* Forms
@@ -179,7 +179,7 @@ textarea {
 
 button,
 input { /* 1 */
-  overflow: visible;
+    overflow: visible;
 }
 
 /**
@@ -189,7 +189,7 @@ input { /* 1 */
 
 button,
 select { /* 1 */
-  text-transform: none;
+    text-transform: none;
 }
 
 /**
@@ -200,7 +200,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+    -webkit-appearance: button;
 }
 
 /**
@@ -211,8 +211,8 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 /**
@@ -223,7 +223,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+    outline: 1px dotted ButtonText;
 }
 
 /**
@@ -231,7 +231,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+    padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -255,7 +255,7 @@ legend {
  */
 
 progress {
-  vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 /**
@@ -263,7 +263,7 @@ progress {
  */
 
 textarea {
-  overflow: auto;
+    overflow: auto;
 }
 
 /**
@@ -322,7 +322,7 @@ height: auto;
  */
 
 details {
-  display: block;
+    display: block;
 }
 
 /*
@@ -330,7 +330,7 @@ details {
  */
 
 summary {
-  display: list-item;
+    display: list-item;
 }
 
 /* Misc
@@ -341,7 +341,7 @@ summary {
  */
 
 template {
-  display: none;
+    display: none;
 }
 
 /**
@@ -349,5 +349,5 @@ template {
  */
 
 [hidden] {
-  display: none;
+    display: none;
 }

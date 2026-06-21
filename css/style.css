@@ -1,26 +1,27 @@
-header{
+header {
     background: rgb(84, 173, 84);
     color: white;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-body{
+body {
     background: rgb(84, 173, 84);
+    margin: 0;
+    padding: 0;
 }
 
-#principal_title{
+#principal_title {
     margin: 0;
 }
 
-#logo{
+#logo {
     width: 50px;
     height: 40px;
 }
 
-#search{
+#search {
     text-align: center;
     margin: 0;
 }
@@ -41,52 +42,95 @@ body{
     overflow: scroll;
 }
 
-#box_search{
+#box_search {
     width: 300px;
     height: 25px;
 }
 
-#succes_search{
+#succes_search {
     width: 30px;
     height: 30px;
     background: rgb(79, 153, 210);
-    border: 0 0 0 0;
+    border: none; /* ✅ corregido: "0 0 0 0" no es válido para border */
 }
-div{
+
+/* ✅ Quitamos div { background } global — era demasiado agresivo */
+.pokemon-info {
     background: rgb(84, 173, 84);
     text-align: center;
 }
 
-article{
+article {
     background: rgb(241, 241, 149);
     width: 300px;
     height: 200px;
     display: inline-block;
     border-radius: 20px;
-    border: black;
     margin: 30px;
-    margin-top: 30px;
 }
 
-article:hover{
+article:hover {
     background-color: aqua;
 }
 
-.pokemon_image{
+.pokemon_image {
     width: 150px;
-    align-items: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-a:hover{
-    color: red
+a:hover {
+    color: red;
 }
-
 
 li {
     background-color: rgb(21, 124, 7);
-    color: white
+    color: white;
+}
+
+/* ✅ summary estilizado correctamente */
+.pokemon-move {
+    text-align: center;
+    margin: 15px auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#moves-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    max-height: 250px; 
+    overflow-y: scroll; 
+    margin: 0 auto;
+}
+
+.move_pokemon {
+    background: chartreuse;
+    border: 2px solid rgb(2, 73, 2); /* ✅ border válido */
+    margin: 2px 0;
+    width: 250px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 0;
+}
+
+details {
+    padding-bottom: 100px;
+}
+
+.pokemons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
