@@ -22,8 +22,15 @@ body {
 }
 
 #search {
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
-    margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 107px;
+    margin: auto;
+
 }
 
 .search-form {
@@ -32,6 +39,10 @@ body {
     justify-content: center;
     gap: 10px;
     padding: 30px;
+    position: fixed;
+    margin: auto;
+    right: 0;
+    left: 0;
 }
 
 #results {
@@ -51,10 +62,13 @@ body {
     width: 30px;
     height: 30px;
     background: rgb(79, 153, 210);
-    border: none; /* ✅ corregido: "0 0 0 0" no es válido para border */
+    border: none;
 }
 
-/* ✅ Quitamos div { background } global — era demasiado agresivo */
+.view-pokemon{
+    margin: 150px;
+}
+
 .pokemon-info {
     background: rgb(84, 173, 84);
     text-align: center;
@@ -88,6 +102,8 @@ a:hover {
 li {
     background-color: rgb(21, 124, 7);
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 /* ✅ summary estilizado correctamente */
@@ -128,6 +144,11 @@ details {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.pokemons article {
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
