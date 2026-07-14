@@ -1,5 +1,14 @@
-const URL = "https://pokeapi.co/api/v2/pokemon?limit=45";
+let limit = 45;
+let URL = `https://pokeapi.co/api/v2/pokemon?limit=${limit}`;
 let nombresPokemon = [];
+
+function more_limit(){
+    limit = limit + 15;
+    URL = `https://pokeapi.co/api/v2/pokemon?limit=${limit}`;
+    console.log(limit);
+    console.log(URL);
+    get_pokemons();
+}
 
 async function get_pokemons() {
     const pokemonsHtml = document.querySelector('.pokemons');
