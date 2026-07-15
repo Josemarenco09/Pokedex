@@ -1,15 +1,15 @@
+
 body {
     margin: 0;
     padding: 0;
 }
 
 .header{
-    background-color: rgb(230, 56, 56);
+    background-color: rgb(247, 81, 81);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    padding: 20px;
 }
 
 #principal_title {
@@ -82,7 +82,7 @@ li {
 }
 
 article {
-    background: grey;
+    background: gray;
     width: 300px;
     height: 200px;
     display: inline-block;
@@ -107,7 +107,7 @@ a:hover {
 }
 
 li {
-    background-color: gray;
+    background-color: rgb(135, 120, 120);
     color: white;
     display: flex;
     justify-content: center;
@@ -133,7 +133,6 @@ li {
 }
 
 .move_pokemon {
-    background: chartreuse;
     border: 2px solid rgb(2, 73, 2); /* ✅ border válido */
     margin: 2px 0;
     width: 250px;

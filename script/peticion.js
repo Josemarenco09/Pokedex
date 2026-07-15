@@ -17,6 +17,8 @@ async function get_pokemons() {
         const responseJson = await response.json();
         const results = responseJson.results;
 
+        console.log(results)
+
         if (results) {
             nombresPokemon = results.map(p => p.name);
 
