@@ -50,8 +50,10 @@ async function get_pokemons() {
                 htmlMoves += `<li>${moves.move.name}</li>`;
             }
 
+            const firstType = responsePokemonJson.types[0].type.name;
+
             htmlResults += `
-                <article>
+                <article class="type-${firstType}" data-type="${firstType}">
                 <a href="pokemon.html?name=${element.name}">
                     <img class="pokemon_image" src="${imagePokemon}" />
                     <h2>${element.name}</h2>

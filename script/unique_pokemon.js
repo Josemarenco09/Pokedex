@@ -18,43 +18,7 @@ const URL = "https://pokeapi.co/api/v2/pokemon";
 
         console.log(type_pokemon)
 
-        switch (type_pokemon) {
-            case ("grass"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#78C850";
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#4E9030";
-                break;
-            
-            case ("fire"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#F08030";
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#C25E10";
-
-                break;
-
-            case ("water"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#6890F0";
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#3F63C9";
-                break;
-
-            case ("electric"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#F8D030";
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#C9A80A";
-                break;
-
-            case ("bug"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#A8B820"
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#7D8A10";
-                break;
-
-            case ("normal"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#A8A878"
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#7D7D52";
-                break;
-
-            case ("poison"):
-                document.querySelector(".pokemon-info").style.backgroundColor = "#A040A0"
-                document.querySelectorAll(".move_pokemon").style.backgroundColor = "#752875";
-                break;
-        }
+        document.querySelector(".pokemon-info").classList.add(`type-${type_pokemon}`);
 
     } catch(e) {
     console.log(e);
