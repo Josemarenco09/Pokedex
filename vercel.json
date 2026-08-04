@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/fronted/index.html" },
+    { "source": "/pokemon.html", "destination": "/fronted/pokemon.html" }
+  ]
+}
